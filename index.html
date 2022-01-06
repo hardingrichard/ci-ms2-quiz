@@ -68,7 +68,7 @@
             <ol>
               <li>Start by creating a username and signing in. Your username will be used to keep track of your score</li>
               <li>Click the Play Quiz button to start answering questions</li>
-              <li>You will have a time limit of 10 minutes to answer the questions</li>
+              <li>You will have a time limit of 10 minutes to answer the multiple choice questions</li>
               <li>Your score will be displayed below, try multiple times to beat your score!</li>
             </ol>
           </p>
@@ -78,7 +78,22 @@
 
     <!-- Quiz Section - please refer to quiz.js file -->
     <section>
-
+      <div class="container">
+        <div id="game-container">
+         <h1>Begin Quiz</h1>
+         <form action="">
+            <p>In order to start answering questions, please create a username so you can track your scores!</p>
+            <!-- Form field for creating username -->
+            <div>
+              <label for="username" class="form-label">Username:</label>
+                <input type="text" class="form-control" id="input-username" name="username" required>
+                <!-- User prompt to display error for username required -->
+                <small id="username-error" class="red-text">Username is required to begin</small>
+            </div>
+            <button type="button" class="btn" id="create-username">Create</button>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
