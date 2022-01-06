@@ -97,9 +97,28 @@
           <p>You have 10 minutes to answer the questions and complete the quiz.</p>
           <button type="button" class="btn" id="start-btn">Begin Quiz</button>
         </div>
-        <div>
+        <div id="timer-container">
           <!-- 10 min Countdown timer to go here -->
           <button type="button" class="btn" id="timer"></button>
+        </div>
+        <div id="quiz-area">
+          <h3 id="quiz-score">Quiz Score</h3>
+
+          <!-- Questions for Quiz to be controlled by quiz.js file -->
+          <form action="" id="quiz-form">
+            <fieldset class="quiz-container">
+              <p>1. Question 1?</p>
+              <input type="radio" name="quiz1" value="1">
+              <label for="radio">1st Answer</label><br>
+              <input type="radio" name="quiz1" value="2">
+              <label for="radio">2nd Answer</label><br>
+              <input type="radio" name="quiz1" value="3">
+              <label for="radio">3rd Answer</label><br>
+              <input type="radio" name="quiz1" value="4">
+              <label for="radio">4th Answer</label><br>
+            </fieldset>
+
+          </form>
         </div>
       </div>
     </section>
