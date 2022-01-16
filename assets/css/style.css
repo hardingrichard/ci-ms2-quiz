@@ -9,5 +9,13 @@ body {
   background-color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../img/hero-img.png")
+  background-image: url("../img/hero-img.png");
+  background-attachment: fixed;
+}
+
+.hero .cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
