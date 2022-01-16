@@ -5,6 +5,11 @@ body {
   line-height: 1.5;
 }
 
+/* Override bootstrap default style navbar colour */
+.navbar-custom {
+  background-color: gold;
+}
+
 .hero {
   background-color: #fff;
   background-size: cover;
