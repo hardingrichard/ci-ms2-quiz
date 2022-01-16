@@ -4,3 +4,10 @@ body {
   font-size: 1rem;
   line-height: 1.5;
 }
+
+.hero {
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/hero-img.png")
+}
