@@ -82,6 +82,12 @@ body {
 
 /* Quiz section styling */
 
+#quiz-section {
+  background-color: gainsboro;
+}
+
+/*footer styling */
+
 footer {
   background-color: red;
   padding-bottom: 1rem;
