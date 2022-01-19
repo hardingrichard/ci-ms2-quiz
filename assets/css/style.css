@@ -54,9 +54,27 @@ body {
   color: #fff;
 }
 
+/*How to play image styling */
 
-/* Media Query 600px and lower */
+.container {
+  padding: 0 6rem;
+  width: 100%;
+}
 
-@media screen and (max-width: 600px) {
+.row {
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+}
 
+.col-half {
+  max-width: 50%;
+  padding: 1rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
