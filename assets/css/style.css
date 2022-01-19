@@ -28,6 +28,8 @@ body {
   color: red;
 }
 
+/* Hero section */
+
 .hero {
   background-color: #fff;
   background-size: cover;
@@ -45,6 +47,11 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+/* How to play section */
+
+.bg-red {
+  background-color: red;
+}
 
 
 /* Media Query 600px and lower */
