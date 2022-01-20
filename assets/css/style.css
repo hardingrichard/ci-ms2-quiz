@@ -23,6 +23,11 @@ body {
   color: #fff;
 }
 
+.btn-sm.btn-default {
+  padding: 0.2rem 1rem;
+  font-size: 1rem;
+}
+
 /* Override bootstrap default style navbar colour */
 .navbar-custom {
   background-color: gold;
