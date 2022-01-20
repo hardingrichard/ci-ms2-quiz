@@ -56,6 +56,24 @@ body {
   color: darkred;
 }
 
+/* Containers style */
+
+.container {
+  padding: 0 6rem;
+  width: 100%;
+}
+
+.row {
+  padding: 1rem;
+}
+
+.col-half {
+  max-width: 50%;
+  padding: 1rem;
+  flex: 1;
+  justify-content: center;
+}
+
 /* Hero section */
 
 .hero {
@@ -84,22 +102,6 @@ body {
 
 /*How to play image styling */
 
-.container {
-  padding: 0 6rem;
-  width: 100%;
-}
-
-.row {
-  padding: 1rem;
-}
-
-.col-half {
-  max-width: 50%;
-  padding: 1rem;
-  flex: 1;
-  justify-content: center;
-}
-
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -120,6 +122,15 @@ body {
   margin-bottom: 0.25rem;
 }
 
+/* Scores table style */
+
+#score-section {
+  background-color: gainsboro;
+  padding: 1rem;
+}
+.score-head {
+  margin: 0 auto;
+}
 /*footer styling */
 
 footer {
