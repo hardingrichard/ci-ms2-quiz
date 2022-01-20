@@ -31,6 +31,7 @@ body {
 .btn-sm.btn-default {
   padding: 0.2rem 1rem;
   font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Override bootstrap default style navbar colour */
@@ -125,6 +126,11 @@ body {
 
 .form-label {
   margin-bottom: 0.25rem;
+}
+
+.form-control {
+  display: block;
+  width: 75%;
 }
 
 /* Scores table style */
