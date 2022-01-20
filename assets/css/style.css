@@ -143,6 +143,24 @@ body {
 .score-head {
   margin: 0 auto;
 }
+
+table {
+  width: 100%;
+  border: 0.1rem solid;
+  margin: 0.5rem;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1rem solid;
+  padding: 0.25rem;
+  background-color: blue;
+  color: #fff;
+}
+
+tbody {
+  background-color: #fff;
+}
 /*footer styling */
 
 footer {
