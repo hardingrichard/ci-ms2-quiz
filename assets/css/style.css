@@ -9,10 +9,9 @@ body {
 /*btn-default used to override bootstrap styling */
 .btn.btn-default {
   padding: 0.5rem 1rem;
-  margin: 1rem;
   width: auto;
   border: 1px;
-  border-radius: 0.75rem;
+  border-radius: 1rem;
   font-size: 1.2rem;
   text-decoration: none;
   text-align: center;
@@ -20,7 +19,7 @@ body {
 
 /*btn-default used to override bootstrap styling */
 .btn-red.btn-default {
-  background-color: red;
+  background-color: darkred;
   color: #fff;
 }
 
@@ -100,6 +99,10 @@ body {
 
 #quiz-section {
   background-color: gainsboro;
+}
+
+#game-container {
+  margin: 3rem 1 rem;
 }
 
 /*footer styling */
