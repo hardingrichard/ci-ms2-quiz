@@ -74,6 +74,11 @@ body {
   justify-content: center;
 }
 
+.col-full {
+  max-width: 100%;
+  flex: 0 0 auto;
+}
+
 /* Hero section */
 
 .hero {
@@ -127,6 +132,7 @@ body {
 #score-section {
   background-color: gainsboro;
   padding: 1rem;
+  text-align: center;
 }
 .score-head {
   margin: 0 auto;
