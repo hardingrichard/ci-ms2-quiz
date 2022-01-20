@@ -65,19 +65,8 @@ body {
 }
 
 .row {
+  display: flex;
   padding: 1rem;
-}
-
-.col-half {
-  max-width: 50%;
-  padding: 1rem;
-  flex: 1;
-  justify-content: center;
-}
-
-.col-full {
-  max-width: 100%;
-  flex: 0 0 auto;
 }
 
 /* Hero section */
@@ -174,4 +163,34 @@ footer {
   align-items: center;
   padding-top: 1rem;
   color: #fff;
+}
+
+/* Media query for larger screens */
+
+@media screen and (min-width: 600px) {
+  .row {
+    display: flex;
+  }
+  
+  .col-half {
+    max-width: 50%;
+    padding: 1rem;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .col-full {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+}
+
+/* Media query for smaller screens */
+
+@media screen and (max-width: 600px) {
+  .form-control {
+    display: block;
+    width: 100%;
+  }
 }
