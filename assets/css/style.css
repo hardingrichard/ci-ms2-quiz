@@ -6,6 +6,24 @@ body {
   line-height: 1.5;
 }
 
+/*btn-default used to override bootstrap styling */
+.btn.btn-default {
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  width: auto;
+  border: 1px;
+  border-radius: 0.75rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*btn-default used to override bootstrap styling */
+.btn-red.btn-default {
+  background-color: red;
+  color: #fff;
+}
+
 /* Override bootstrap default style navbar colour */
 .navbar-custom {
   background-color: gold;
@@ -63,9 +81,7 @@ body {
 }
 
 .row {
-  display: flex;
   padding: 1rem;
-  width: 100%;
 }
 
 .col-half {
