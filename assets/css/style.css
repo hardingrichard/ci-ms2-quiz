@@ -110,17 +110,17 @@ body {
 }
 
 #game-container {
-  margin: 3rem 1 rem;
+  margin: 3rem 1rem;
 }
 
 .form-label {
   margin-bottom: 0.25rem;
 }
 
-.form-control {
+/* .form-control {
   display: block;
   width: 75%;
-}
+} */
 
 /* Scores table style */
 
@@ -165,6 +165,14 @@ footer {
   color: #fff;
 }
 
+/* Media query for screens over 900px */
+@media screen and (min-width: 900px) {
+  .form-control {
+    display: block;
+    max-width: 70%;
+  }
+}
+
 /* Media query for larger screens */
 
 @media screen and (min-width: 600px) {
@@ -175,6 +183,7 @@ footer {
   .col-half {
     max-width: 50%;
     padding: 1rem;
+    margin: 1rem;
     flex: 1;
     justify-content: center;
   }
@@ -183,7 +192,7 @@ footer {
     width: 100%;
     flex: 0 0 auto;
   }
-  
+
 }
 
 /* Media query for smaller screens */
