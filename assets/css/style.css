@@ -23,6 +23,11 @@ body {
   color: #fff;
 }
 
+.btn-red.btn-default:hover {
+  background-color: darkslateblue;
+  color: #fff;
+}
+
 .btn-sm.btn-default {
   padding: 0.2rem 1rem;
   font-size: 1rem;
@@ -104,10 +109,15 @@ body {
 
 #quiz-section {
   background-color: gainsboro;
+  padding: 1rem;
 }
 
 #game-container {
   margin: 3rem 1 rem;
+}
+
+.form-label {
+  margin-bottom: 0.25rem;
 }
 
 /*footer styling */
