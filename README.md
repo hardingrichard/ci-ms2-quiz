@@ -15,7 +15,7 @@ A website where users can play a quiz answering questions on the country of Colo
     3. [User Stories](#user-stories)
 3. [Site Design](#site-design)
     1. [Wireframes](#wireframes)
-   2. [Design choice](#design-choice)
+    2. [Design choice](#design-choice)
 4. [Site Features](#linkhere)
 5. [Technology stack](#linkhere)
     1. [Languages](#linkhere)
@@ -75,3 +75,13 @@ No. | As a | I want to | so that
 <summary>Quiz Landing page</summary>
 <img src="documents/wireframes/landingpage.png" alt="Quiz landing page image">
 </details>
+
+### Design Choice
+The website was created in a way in which to to make it intuitive and convenient for the user to navigate.
+Using the national colours of Colombia (Yellow, Blue, Red) to bring familiary and make it clear what the site
+has to do with and is about. The colours being bright and contrasting also provides an aspect of fun which
+compliments the purpose of the website in which to play a game. The site was designed to be free from distracting 
+elements from popping up on the screen and page links were used in the navigation bar to take the user straight to 
+each section of the landing page than needing to scroll. The website consists of the one landing page which features 
+a How To Play section giving users instructions on how to play, a Quiz section where the users can partake in the 
+quiz and test their knowledge as well as a scores section so that users can see how well they did.
