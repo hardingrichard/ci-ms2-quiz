@@ -67,3 +67,11 @@ No. | As a | I want to | so that
 5 | site owner | give users a way of retaking the quiz | to keep users engaged and increase replayability
 6 | site owner | have users feel familiar with the page design | users are clear on what the quiz is to do with
 7 | site owner | have a section detailing how to play | users can play without any confusion on what to do
+
+## Site Design
+
+### Wireframes
+<details>
+<summary>Quiz Landing page</summary>
+<img src="documents/wireframes/landingpage.png" alt="Quiz landing page image">
+</details>
