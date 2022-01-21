@@ -9,10 +9,10 @@ A website where users can play a quiz answering questions on the country of Colo
 1. [Key Project Goals](#key-project-goals)
     1. [Site Owner Goals](#site-owner-goals)
     2. [User Goals](#user-goals)
-2. [Information Gathering](#linkhere)
-    1. [Target Audience](#linkhere)
-    2. [User Requirements](#linkhere)
-    3. [User Stories](#Linkhere)
+2. [Information Gathering](#information-gathering)
+    1. [Target Audience](#target-audience)
+    2. [User Requirements](#user-requirements)
+    3. [User Stories](#user-stories)
 3. [Site Design](#linkhere)
     1. [Wireframes](#linkhere)
    2. [Design choice](#linkhere)
@@ -41,3 +41,10 @@ A website where users can play a quiz answering questions on the country of Colo
 ### User Goals
 * Fun and challenging quiz to play
 * Test General knowledge of colombia
+
+## Information Gathering
+
+### Target Audience
+* People who like Trivia and testing their knowledge
+* People who want to learn more about Colombia through trivia
+* Web-browser gamers
