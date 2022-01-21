@@ -39,3 +39,5 @@ A website where users can play a quiz answering questions on the country of Colo
 * To have and create a fun and challenging game for people to play
 
 ### User Goals
+* Fun and challenging quiz to play
+* Test General knowledge of colombia
