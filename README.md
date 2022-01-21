@@ -2,7 +2,7 @@
 A website where users can play a quiz answering questions on the country of Colombia.\
 [Link to website](https://hardingrichard.github.io/ci-ms2-quiz)
 
-![Responsive Mockup Design](screenshot-image-here)
+![Responsive Mockup Design](documents/mockup.png)
 
 ## Table Of Contents
 
