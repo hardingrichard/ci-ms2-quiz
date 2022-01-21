@@ -48,3 +48,11 @@ A website where users can play a quiz answering questions on the country of Colo
 * People who like Trivia and testing their knowledge
 * People who want to learn more about Colombia through trivia
 * Web-browser gamers
+
+### User Requirements
+* Challenging and fun game to play
+* Feedback on how scored with correct answers
+* Intuitive site design to easily navigate
+* Responsive to multiple devices
+* Be Accessible
+* Features to work as intended
