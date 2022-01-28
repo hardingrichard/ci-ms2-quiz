@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colombia Quiz</title>
+
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <!-- Bootstrap 5.0 cached link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+</head>
+
+<body>
+    <!-- Navigation Bar - Bootstrap documentation used for external code with making navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg  navbar-custom shadow fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Quiz of Colombia</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbar-links">
+            <ul class="navbar-nav m-auto ">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#how-to-play">How To Play</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#quiz-section">Play Quiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#score-section">Scores</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+  <!-- Quiz Section - please refer to quiz.js file -->
+  <section id="quiz-section">
+    <div class="container">
+      <div id="game-container">
+        <div class="col-full">
+          <h1>Begin Quiz</h1>
+          <form action="">
+            <p>In order to start answering questions, please create a username so you can track your scores!</p>
+            <!-- Form field for creating username -->
+            <div>
+              <label for="username" class="form-label">Username:</label>
+                <input type="text" class="form-control" id="input-username" name="username" required>
+                <!-- User prompt to display error for username required -->
+                <small id="username-error" class="red-text">Username is required to begin</small>
+            </div>
+            <button type="button" class="btn btn-red btn-sm btn-default" id="create-username">Create Username</button>
+          </form>
+        </div>
+      </div>
+      <div>
+        <p>You have 10 minutes to answer the questions and complete the quiz.</p>
+        <button type="button" class="btn btn-red btn-default" id="start-btn">Begin Quiz</button>
+      </div>
+      <div id="timer-container">
+        <!-- 10 min Countdown timer to go here - button placeholder -->
+        <button type="button" class="btn" id="timer"></button>
+      </div>
+      <div id="quiz-area">
+        <h3 id="quiz-score">Quiz Score</h3>
+
+        <!-- Questions for Quiz to be controlled by quiz.js file using name="quiz+number" -->
+        <form action="" id="quiz-form">
+
+          <!-- Question one -->
+          <fieldset class="quiz-container">
+            <p>1. Which of these mountains are NOT in Colombia?</p>
+            <input type="radio" name="quiz1" value="1">
+            <label for="radio">Pico Simón Bolívar</label><br>
+            <input type="radio" name="quiz1" value="2">
+            <label for="radio">Ritacuba Blanco</label><br>
+            <input type="radio" name="quiz1" value="3">
+            <label for="radio">Ben Nevis</label><br>
+            <input type="radio" name="quiz1" value="4">
+            <label for="radio">Pico Cristóbal Colón</label><br>
+          </fieldset>
+
+          <!-- Question Two -->
+          <fieldset class="quiz-container">
+            <p>2. Colombia produces 60% of the world's supply of which precious stone?</p>
+            <input type="radio" name="quiz2" value="1">
+            <label for="radio">Garnet</label><br>
+            <input type="radio" name="quiz2" value="2">
+            <label for="radio">Emerald</label><br>
+            <input type="radio" name="quiz2" value="3">
+            <label for="radio">Diamond</label><br>
+            <input type="radio" name="quiz2" value="4">
+            <label for="radio">Topaz</label><br>
+          </fieldset>
+
+          <!-- Question Three -->
+          <fieldset class="quiz-container">
+            <p>3. What is the capital city of Colombia?</p>
+            <input type="radio" name="quiz3" value="1">
+            <label for="radio">Bogotá</label><br>
+            <input type="radio" name="quiz3" value="2">
+            <label for="radio">Medellin</label><br>
+            <input type="radio" name="quiz3" value="3">
+            <label for="radio">Cali</label><br>
+            <input type="radio" name="quiz3" value="4">
+            <label for="radio">Cartagena</label><br>
+          </fieldset>
+
+          <!-- Question Four -->
+          <fieldset class="quiz-container">
+            <p>4. Which waterfall can be found in the capital, Bogotá?</p>
+            <input type="radio" name="quiz4" value="1">
+            <label for="radio">Victoria Falls</label><br>
+            <input type="radio" name="quiz4" value="2">
+            <label for="radio">Tugela Falls</label><br>
+            <input type="radio" name="quiz4" value="3">
+            <label for="radio">Angel Falls</label><br>
+            <input type="radio" name="quiz4" value="4">
+            <label for="radio">Tequendama Falls</label><br>
+          </fieldset>
+
+          <!-- Question Five -->
+          <fieldset class="quiz-container">
+            <p>5. What is Cumbia?</p>
+            <input type="radio" name="quiz5" value="1">
+            <label for="radio">A type of drink</label><br>
+            <input type="radio" name="quiz5" value="2">
+            <label for="radio">A type of music</label><br>
+            <input type="radio" name="quiz5" value="3">
+            <label for="radio">A type of bird</label><br>
+            <input type="radio" name="quiz5" value="4">
+            <label for="radio">A type of food</label><br>
+          </fieldset>
+
+          <!-- Question six -->
+          <fieldset class="quiz-container">
+            <p>6. Which of these countries does NOT share a border with Colombia?</p>
+            <input type="radio" name="quiz6" value="1">
+            <label for="radio">Peru</label><br>
+            <input type="radio" name="quiz6" value="2">
+            <label for="radio">Venezuela</label><br>
+            <input type="radio" name="quiz6" value="3">
+            <label for="radio">Mexico</label><br>
+            <input type="radio" name="quiz6" value="4">
+            <label for="radio">Ecuador</label><br>
+          </fieldset>
+
+          <!-- Question Seven -->
+          <fieldset class="quiz-container">
+            <p>7. Which of these is the main river of Colombia?</p>
+            <input type="radio" name="quiz7" value="1">
+            <label for="radio">Orinoco</label><br>
+            <input type="radio" name="quiz7" value="2">
+            <label for="radio">Amazonas</label><br>
+            <input type="radio" name="quiz7" value="3">
+            <label for="radio">Atrato</label><br>
+            <input type="radio" name="quiz7" value="4">
+            <label for="radio">Magdalena</label><br>
+          </fieldset>
+
+          <!-- Question Eight -->
+          <fieldset class="quiz-container">
+            <p>8. What is the national animal of Colombia?</p>
+            <input type="radio" name="quiz8" value="1">
+            <label for="radio">Condor</label><br>
+            <input type="radio" name="quiz8" value="2">
+            <label for="radio">Jaguar</label><br>
+            <input type="radio" name="quiz8" value="3">
+            <label for="radio">Toucan</label><br>
+            <input type="radio" name="quiz8" value="4">
+            <label for="radio">Giant Anteater</label><br>
+          </fieldset>
+
+          <!-- Question Nine -->
+          <fieldset class="quiz-container">
+            <p>9. What material is the "Sombrero vueltiao" made of?</p>
+            <input type="radio" name="quiz9" value="1">
+            <label for="radio">Cotton</label><br>
+            <input type="radio" name="quiz9" value="2">
+            <label for="radio">Plastic</label><br>
+            <input type="radio" name="quiz9" value="3">
+            <label for="radio">Straw</label><br>
+            <input type="radio" name="quiz9" value="4">
+            <label for="radio">Paper</label><br>
+          </fieldset>
+
+          <!-- Question Ten -->
+          <fieldset class="quiz-container">
+            <p>10. What is the official language of Colombia?</p>
+            <input type="radio" name="quiz10" value="1">
+            <label for="radio">Portuguese</label><br>
+            <input type="radio" name="quiz10" value="2">
+            <label for="radio">Spanish</label><br>
+            <input type="radio" name="quiz10" value="3">
+            <label for="radio">English</label><br>
+            <input type="radio" name="quiz10" value="4">
+            <label for="radio">French</label><br>
+          </fieldset>
+          <!-- User prompt error to notify to answer question-->
+          <small id="not-selected">Please make your choice before moving onto the next question</small>
+          <!-- Quiz previous and next buttons -->
+          <div>
+            <button type="button" id="prev-btn" class="btn btn-red btn-sm btn-default">< Previous</button>
+            <button type="button" id="next-btn" class="btn btn-red btn-sm btn-default">Next ></button>
+            <button type="button" id="submit-btn" class="btn btn-red btn-sm btn-default">Submit</button>
+            <button type="button" id="try-btn" class="btn btn-red btn-sm btn-default">Try again</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scoreboard section -->
+  <section id="score-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-full">
+          <h3 class="score-head">Top Scores</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Number of Attempts</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody id="scores">
+              <!-- scores to appear here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer Section with Copyright -->
+<footer>
+  <div class="container" id="footer-copyright">
+    <p>Copyright &copy; 2022, Quiz of Colombia - Richard Harding.</p>
+  </div>
+</footer>
+
+<!-- Font Awesome kit code -->
+<script src="https://kit.fontawesome.com/28a79407d5.js" crossorigin="anonymous"></script>
+
+<!-- JavaScript Bootstrap 5.0 cached link for top navbar -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- JavaScript file links -->
+<script src="assets/js/quiz.js"></script>
+</body>
+</html>
