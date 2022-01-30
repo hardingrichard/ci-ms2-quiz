@@ -45,14 +45,36 @@
     <!-- Quiz Section - please refer to quiz.js file -->
     <section class="container">
       <div id="quiz-container">
+        
+        <!-- Header for the quiz where the score and question progress will be shown -->
         <div id="quiz-area">
           <div class="quiz-item">
-            <h2 class="quiz-score">Quiz Score</h2>
-              <p id="score">0</p>
+            <!-- Score marker for the quiz -->
+            <h2 class="quiz-marker">Quiz Score</h2>
+              <p id="score" class="quiz-text">0</p>
           </div>
           <div class="quiz-item">
-            <h2 class="question-progress">Question</h2>
+            <!-- Question marker out of 10-->
+            <h2 id="quiz-progress-title" class="quiz-marker">Question</h2>
+            <!-- Progress bar for quiz-->
+            <div id="quiz-progress">
+              <div id="quiz-progress-max"></div>
+            </div>
           </div>
+        </div>
+        <!-- Question and answers -->
+        <h1 id="question">Question one</h1>
+        <div class="answer-area">
+          <p value="1" class="answer-option">Option 1</p>
+        </div>
+        <div class="answer-area">
+          <p value="2" class="answer-option">Option 2</p>
+        </div>
+        <div class="answer-area">
+          <p value="3" class="answer-option">Option 3</p>
+        </div>
+        <div class="answer-area">
+          <p value="4" class="answer-option">Option 4</p>
         </div>
       </div>
 
