@@ -12,117 +12,69 @@ let quizScore = document.querySelector('#score');
 let quizProgressMax = document.querySelector('#quiz-progress-max');
 
 let question = document.querySelector('#question');
+let 
 
 // Array for questions to appear in quiz
-let questions = [
+var questions = 
+[
     {
         // Question 1
         question: "Which of these mountains are NOT in Colombia?",
-
-        option1: "Pico Simón Bolívar",
-        option2: "Ritacuba Blanco",
-        option3: "Ben Nevis",
-        option4: "Pico Cristóbal Colón",
-
+        options: ["Pico Simón Bolívar", "Ritacuba Blanco", "Ben Nevis", "Pico Cristóbal Colón"],
         answer: 3
     },
     {
         // Question 2
         question: "Colombia produces 60% of the world's supply of which precious stone?",
-
-        option1: "Garnet",
-        option2: "Emerald",
-        option3: "Diamond",
-        option4: "Topaz",
-
+        options: ["Garnet", "Emerald", "Diamond", "Topaz"],
         answer: 2
     },
     {
         // Question 3
         question: "What is the capital city of Colombia?",
-
-        option1: "Bogotá",
-        option2: "Medellin",
-        option3: "Cali",
-        option4: "Cartagena",
-
+        options: ["Bogotá", "Medellin", "Cali", "Cartagena"],
         answer: 1
     },
     {
         // Question 4
         question: "Which waterfall can be found in the city of Bogotá?",
-
-        option1: "Victoria Falls",
-        option2: "Tugela Falls",
-        option3: "Angel Falls",
-        option4: "Tequendama Falls",
-
+        options: ["Victoria Falls", "Tugela Falls", "Angel Falls", "Tequendama Falls"],
         answer: 4
     },
     {
         // Question 5
         question: "What is Cumbia?",
-
-        option1: "A type of drink",
-        option2: "A type of music",
-        option3: "A type of bird",
-        option4: "A type of food",
-
+        options: ["A type of drink", "A type of music", "A type of bird", "A type of food"],
         answer: 2
     },
     {
         // Question 6
         question: "Which of these countries does NOT share a border with Colombia?",
-
-        option1: "Peru",
-        option2: "Venezuela",
-        option3: "Mexico",
-        option4: "Ecuador",
-
+        options: ["Peru", "Venezuela", "Mexico", "Ecuador"],
         answer: 3
     },
     {
         // Question 7
         question: "Which of these is the main river of Colombia?",
-
-        option1: "Orinoco",
-        option2: "Amazonas",
-        option3: "Atrato",
-        option4: "Magdalena",
-
+        options: ["Orinoco", "Amazonas", "Atrato", "Magdalena"],
         answer: 4
     },
     {
         // Question 8
         question: "What is the national animal of Colombia?",
-
-        option1: "Condor",
-        option2: "Jaguar",
-        option3: "Toucan",
-        option4: "Giant Anteater",
-
+        options: ["Condor", "Jaguar", "Toucan", "Giant Anteater"],
         answer: 1
     },
     {
         // Question 9
         question: "What material is the 'Sombrero vueltiao' made of?",
-
-        option1: "Cotton",
-        option2: "Plastic",
-        option3: "Straw",
-        option4: "Paper",
-
+        options: ["Cotton", "Plastic", "Straw", "Paper"],
         answer: 3
     },
     {
         // Question 10
         question: "What is the official language of Colombia?",
-
-        option1: "Portuguese",
-        option2: "Spanish",
-        option3: "English",
-        option4: "French",
-
+        options: ["Portuguese", "Spanish", "English", "French"],
         answer: 2
     },
 ]
