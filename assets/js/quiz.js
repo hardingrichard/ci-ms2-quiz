@@ -13,7 +13,7 @@ let points_score = 10;
 let score = 0;
 
 // progress bar variables - Resource used for help: https://javascript.plainenglish.io/building-a-progress-bar-in-css-js-html-from-scratch-6449da06042
-let quizProgressTitle = document.getElementsById('#quiz-prog-title');
+let quizProgressTitle = document.getElementById('#quiz-prog-title');
 let quizProgressMax = document.getElementById('#quiz-progress-max');
 let questionCounter = 0;
 let max_questions = 10;
@@ -64,6 +64,9 @@ let correctAnswer = true
           option.innerText = currentQuestion['option' + value]
       })
       
+      // change content of array for correct answer
+      questionOptions.splice(questionsIndex, 1);
+      correctAnswer = true;
   }
 
 // Array for questions to appear in quiz
