@@ -21,6 +21,7 @@ body {
 .btn-red.btn-default {
   background-color: darkred;
   color: #fff;
+  margin: 1rem 0.2rem;
 }
 
 .btn-red.btn-default:hover {
