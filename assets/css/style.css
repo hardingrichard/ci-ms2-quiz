@@ -178,6 +178,7 @@ body {
   border: solid 0.1rem blue;
   border-radius: 0.5rem;
   background-color: gold;
+  font-weight: bold;
 }
 
 .answer-area:hover {
@@ -262,11 +263,29 @@ footer {
 
 }
 
-/* Media query for smaller screens */
+/* Media query for medium screens */
 
 @media screen and (max-width: 600px) {
   #quiz-progress {
     width: 15rem;
+    overflow: hidden;
+  }
+}
+
+/* Media query for smaller screens */
+
+@media screen and (max-width: 440px) {
+  #quiz-progress {
+    width: 10rem;
+    overflow: hidden;
+  }
+}
+
+/* Media query for small screens */
+
+@media screen and (max-width: 356px) {
+  #quiz-progress {
+    width: 8rem;
     overflow: hidden;
   }
 }

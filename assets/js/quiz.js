@@ -68,11 +68,12 @@ startButton.addEventListener('click', startQuiz)
           option.innerText = currentQuestion['option' + number]
       })
       
-      // change content of array for correct answer
+      // change content of array for answers
       questionOptions.splice(questionsIndex, 1);
       correctAnswer = true;
   }
-
+  
+  // See readme for tutorial used for guidance
   options.forEach(option => {
     option.addEventListener('click', e => {
         if(!correctAnswer) return
@@ -87,9 +88,19 @@ startButton.addEventListener('click', startQuiz)
         }
 
         selectOption.parentElement.classList.add(applyClass)
+
+        setTimeout(() => {
+          selectOption.parentElement.classList.remove(applyClass)
+          getNextQuestion()
+        }, 100)
     })
   })
 
+  incrementScore = value => {
+    score += value
+    quizScore.innerText = score
+  }
+  
 // Array for questions to appear in quiz
 var questions = 
 [
