@@ -7,12 +7,20 @@ to the user on how well they are doing.
 
 // List of variables used for the Quiz
 
-let quizProgressTitle = document.querySelector('#quiz-prog-title');
+// score variable
 let quizScore = document.querySelector('#score');
-let quizProgressMax = document.querySelector('#quiz-progress-max');
+let points_score = 10;
 
+// progress bar variables
+let quizProgressTitle = document.querySelector('#quiz-prog-title');
+let quizProgressMax = document.getElementById('#quiz-progress-max');
+let questionCounter = 0;
+let max_questions = 10;
+
+quizProgressMax.style.width =  `${(questionCounter / max_questions) * 100}%`;
+
+// question variables
 let question = document.querySelector('#question');
-let 
 
 // Array for questions to appear in quiz
 var questions = 

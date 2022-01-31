@@ -109,20 +109,24 @@ body {
   padding: 1rem;
 }
 
-#game-container {
+#quiz-container {
   margin: 3rem 1rem;
 }
 
-.form-label {
-  margin-bottom: 0.25rem;
+/* Progress bar style */
+#quiz-progress {
+  width: 20rem;
+  height: 5rem;
+  border: solid 0.1rem;
+  margin-top: 1rem;
+  background-color: #fff;
 }
 
-/* .form-control {
-  display: block;
-  width: 75%;
-} */
-
-/* Scores table style */
+#quiz-progress-max {
+  height: 3rem;
+  background-color: blue;
+  width: 0%;
+}
 
 #score-section {
   background-color: gainsboro;
@@ -150,6 +154,7 @@ th {
 tbody {
   background-color: #fff;
 }
+
 /*footer styling */
 
 footer {
