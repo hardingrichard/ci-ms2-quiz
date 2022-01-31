@@ -108,10 +108,15 @@ body {
 #quiz-section {
   background-color: gainsboro;
   padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #quiz-container {
-  margin: 3rem 1rem;
+  margin: 2rem 0.5rem;
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.4);
 }
 
 #quiz-area {
@@ -121,28 +126,19 @@ body {
 
 .quiz-marker {
   font-size: 1rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  margin: 0.5rem;
 }
 
 .quiz-text {
   text-align: center;
   font-size: 1.5rem;
-}
-
-.answer-area {
-  display: flex;
-  width: 100%;
-  margin-top: 1rem;
-  border: solid 0.1rem blue;
+  border: 1px solid;
   border-radius: 0.5rem;
-  background-color: gold;
 }
 
-.answer-area:hover {
-  box-shadow: 0 1rem 1rem 0 rgba(2, 34, 221, 0.4);
-  cursor: crosshair;
-  transform: scale(1.1);
+#question {
+  margin-bottom: 1rem;
 }
 
 /* Progress bar style */
@@ -162,6 +158,37 @@ body {
   width: 0%;
 }
 
+/* Answer options styling */
+.answer-area {
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+  border: solid 0.1rem blue;
+  border-radius: 0.5rem;
+  background-color: gold;
+}
+
+.answer-area:hover {
+  box-shadow: 0 1rem 1rem 0 rgba(2, 34, 221, 0.4);
+  cursor: crosshair;
+  transform: scale(1.05);
+}
+
+.answer-option {
+  padding: 1.5rem;
+  font-size: 1rem;
+  color: blue;
+  width: 100%;
+}
+
+/* Styling for when answered correct / incorrect */
+.correct {
+  background-color: green;
+}
+
+.incorrect {
+  background-color: red;
+}
 
 /* table {
   width: 100%;
@@ -226,5 +253,8 @@ footer {
 /* Media query for smaller screens */
 
 @media screen and (max-width: 600px) {
-
+  #quiz-progress {
+    width: 15rem;
+    overflow: hidden;
+  }
 }
