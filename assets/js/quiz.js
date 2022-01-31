@@ -7,7 +7,7 @@
 
 // // List of variables used for the Quiz
 
-// score variable
+// score variables
 let quizScore = document.getElementById('score');
 let points_score = 10;
 let score = 0;
@@ -27,9 +27,9 @@ let questionOptions = [];
 let options = Array.from(document.querySelectorAll('.answer-option'));
 let correctAnswer = true
 
-// Clicking on the start button will begin quiz
-let startButton = document.getElementById('start-btn')
-startButton.addEventListener('click', startQuiz)
+// // Clicking on the start button will begin quiz
+// let startButton = document.getElementById('start-btn')
+// startButton.addEventListener('click', startQuiz)
 
 /**
  * startGame function used to start the quiz with a score of nil and picking up the first question
@@ -43,18 +43,18 @@ startButton.addEventListener('click', startQuiz)
   }
   
   /**
-   * getNextQuestion function used to keep track of the score returning the results page 
+   * getNextQuestion function used to keep track of the score returning the score result page 
    */
   function getNextQuestion () {
       if (questionOptions.length === 0 || questionCounter > max_questions) {
           localStorage.setItem('mostRecentScore', score)
           return window.location.assign('scores.html')
       }
-  
-      questionCounter++
+
       // changes value of width property for progress bar relating to question number
       quizProgressMax.style.width = `${(questionCounter/max_questions) * 100}%`
-      // changes the question number count out of 10
+      // changes the question number count out of 10 increasing by +1
+      questionCounter++
       quizProgressTitle.innerText = `Question ${questionCounter} of ${max_questions}`
 
       // randomises the questions displayed to the user so that they don't repeat order
@@ -68,39 +68,44 @@ startButton.addEventListener('click', startQuiz)
           option.innerText = currentQuestion['option' + number]
       })
       
-      // change content of array for answers
+      // change content of array for correct answers
       questionOptions.splice(questionsIndex, 1);
       correctAnswer = true;
   }
   
   // See readme for tutorial used for guidance
   options.forEach(option => {
-    option.addEventListener('click', e => {
+    option.addEventListener('click', event => {
         if(!correctAnswer) return
 
         correctAnswer = false
-        let selectOption = e.target
+        let selectOption = event.target
         let selectAnswer = selectOption.dataset['number']
+
+        /* if user selection equal to true then toggle answer feedback to show 
+        green or false change to red with .CSS style */
         let applyClass = selectAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
 
+        // Increases the score by +10 per correct answer
         if(applyClass === 'correct') {
           incrementScore(points_score)
         }
 
+        // controls the time between clicking and new set of questions displayed
         selectOption.parentElement.classList.add(applyClass)
-
+        
         setTimeout(() => {
           selectOption.parentElement.classList.remove(applyClass)
           getNextQuestion()
-        }, 100)
+        }, 500)
     })
   })
-
+  
   incrementScore = value => {
     score += value
     quizScore.innerText = score
   }
-  
+
 // Array for questions to appear in quiz
 var questions = 
 [
