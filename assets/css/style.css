@@ -103,6 +103,18 @@ body {
   height: auto;
 }
 
+/* Quiz buttons */
+
+.quiz-controls {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.hide {
+  display: none;
+}
+
 /* Quiz section styling */
 
 #quiz-section {
