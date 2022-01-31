@@ -1,11 +1,13 @@
-// /* File used by quiz.html in order to display a quiz which is made up of 10
-// questions for the user to answer. The quiz will be run with a progress bar and 
-// question count showing the progress of the quiz so that the user can guage how 
-// many questions are left. The score will increment at the top to give feedback
-// to the user on how well they are doing.
-// */
+/* File used by quiz.html in order to display a quiz which is made up of 10
+questions for the user to answer. The quiz will be run with a progress bar and 
+question count showing the progress of the quiz so that the user can guage how 
+many questions are left. The score will increment at the top to give feedback
+to the user on how well they are doing. 
 
-// // List of variables used for the Quiz
+Please see bottom of file for questions used for quiz.
+*/
+
+// List of variables used for the Quiz
 
 // score variables
 let quizScore = document.getElementById('score');
@@ -27,7 +29,7 @@ let questionOptions = [];
 let options = Array.from(document.querySelectorAll('.answer-option'));
 let correctAnswer = true
 
-// // Clicking on the start button will begin quiz
+// Clicking on the start button will begin quiz
 // let startButton = document.getElementById('start-btn')
 // startButton.addEventListener('click', startQuiz)
 
@@ -73,7 +75,7 @@ let correctAnswer = true
       correctAnswer = true;
   }
   
-  // See readme for tutorial used for guidance
+  // See readme for credits with tutorial used to get guidance for the following arrow function
   options.forEach(option => {
     option.addEventListener('click', event => {
         if(!correctAnswer) return
@@ -82,8 +84,8 @@ let correctAnswer = true
         let selectOption = event.target
         let selectAnswer = selectOption.dataset['number']
 
-        /* if user selection equal to true then toggle answer feedback to show 
-        green or false change to red with .CSS style */
+        /* Ternary operator for if user selection equal to true then toggle answer feedback 
+        to show green or false change to red with .CSS style */
         let applyClass = selectAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
 
         // Increases the score by +10 per correct answer
@@ -91,7 +93,7 @@ let correctAnswer = true
           incrementScore(points_score)
         }
 
-        // controls the time between clicking and new set of questions displayed
+        // arrow function controls the time between clicking and new set of questions displayed
         selectOption.parentElement.classList.add(applyClass)
         
         setTimeout(() => {
