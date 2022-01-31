@@ -8,19 +8,63 @@ to the user on how well they are doing.
 // List of variables used for the Quiz
 
 // score variable
-let quizScore = document.querySelector('#score');
+let quizScore = document.getElementById('#score');
 let points_score = 10;
+let score = 0;
 
-// progress bar variables
-let quizProgressTitle = document.querySelector('#quiz-prog-title');
+// progress bar variables - Resource used for help: https://javascript.plainenglish.io/building-a-progress-bar-in-css-js-html-from-scratch-6449da06042
+let quizProgressTitle = document.getElementsById('#quiz-prog-title');
 let quizProgressMax = document.getElementById('#quiz-progress-max');
 let questionCounter = 0;
 let max_questions = 10;
 
-quizProgressMax.style.width =  `${(questionCounter / max_questions) * 100}%`;
-
 // question variables
-let question = document.querySelector('#question');
+let question = document.getElementbyId('#question');
+let currentQuestion = {};
+let questionCounter = 0;
+let questionOptions = [];
+
+// answer variables
+let options = Array.from(document.getElementsByClassName('.answer-option'));
+let correctAnswer = true
+
+/**
+ * startGame function used to start the quiz with a score of nil and picking up the first question
+ */
+ function startQuiz () {
+    score = 0;
+    questionCounter = 0;
+    questionOptions = [...questions];
+    getNextQuestion();
+  }
+  
+  /**
+   * getNextQuestion function used to keep track of the score returning the results page 
+   */
+  function getNextQuestion () {
+      if (questionOptions.length === 0 || questionCounter > max_questions) {
+          localStorage.setItem('mostRecentScore', score)
+          return window.location.assign('scores.html')
+      }
+  
+      questionCounter++
+      // changes value of width property for progress bar relating to question number
+      quizProgressMax.style.width = `${(questionCounter / max_questions) * 100}%`;
+      // changes the question number count out of 10
+      quizProgressTitle.innerText = `Question ${questionCounter} of ${max_questions}`;
+
+      // randomises the questions displayed to the user so that they don't repeat order
+      let questionsIndex = Math.floor(Math.random() * questionOptions.length);
+      currentQuestion = questionOptions[questionIndex]
+      question.innerText = currentQuestion.question
+      
+      // for loop to go through each question answer
+      answerOptions.forEach(option => {
+          let value = option.dataset['value']
+          option.innerText = currentQuestion['option' + value]
+      })
+      
+  }
 
 // Array for questions to appear in quiz
 var questions = 
@@ -86,3 +130,7 @@ var questions =
         answer: 2
     },
 ]
+
+
+// Call function to display quiz
+startQuiz ()
