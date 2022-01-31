@@ -136,4 +136,4 @@ var questions =
 
 
 // Call function to display quiz
-startQuiz ()
+startQuiz ();
