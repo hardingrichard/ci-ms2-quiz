@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
   background-color: #fff;
   margin: 0;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  font-family: Roboto,Arial,sans-serif;
 }
 
 /*btn-default used to override bootstrap styling */
@@ -138,9 +141,7 @@ body {
 /* Quiz section styling */
 
 #quiz-section {
-  background-color: gainsboro;
   padding: 1rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #quiz-container {
@@ -148,6 +149,7 @@ body {
   padding: 1rem;
   border: 1px solid;
   border-radius: 0.5rem;
+  background-color: #fff;
   box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.4);
 }
 
@@ -217,6 +219,7 @@ body {
 /* Styling for when answered correct / incorrect */
 .correct {
   background-color: green;
+  color: #fff;
 }
 
 .incorrect {
@@ -244,7 +247,7 @@ body {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  background-repeat: repeat-y;
+  background-repeat: repeat;
   background-image: url("../img/hero-img.png");
 }
 
