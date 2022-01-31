@@ -34,7 +34,7 @@ let correctAnswer = true
 // startButton.addEventListener('click', startQuiz)
 
 /**
- * startGame function used to start the quiz with a score of nil and picking up the first question
+ *   Function used to start the quiz with a score of nil and picking up the first question
  */
   function startQuiz () {
     console.log('Started quiz')
@@ -45,12 +45,12 @@ let correctAnswer = true
   }
   
   /**
-   * getNextQuestion function used to keep track of the score returning the score result page 
+   * getNextQuestion function used to keep track of the score returning the quiz page at the end 
    */
   function getNextQuestion () {
       if (questionOptions.length === 0 || questionCounter > max_questions) {
           localStorage.setItem('mostRecentScore', score)
-          return window.location.assign('scores.html')
+          return window.location.assign('quiz.html')
       }
 
       // changes value of width property for progress bar relating to question number
@@ -70,7 +70,7 @@ let correctAnswer = true
           option.innerText = currentQuestion['option' + number]
       })
       
-      // change content of array for correct answers
+      // change content of array by removing previous question
       questionOptions.splice(questionsIndex, 1);
       correctAnswer = true;
   }
@@ -93,7 +93,8 @@ let correctAnswer = true
           incrementScore(points_score)
         }
 
-        // arrow function controls the time between clicking and new set of questions displayed
+        /* arrow function controls the time between clicking and removing to present
+        new set of questions displayed */
         selectOption.parentElement.classList.add(applyClass)
         
         setTimeout(() => {
@@ -108,11 +109,10 @@ let correctAnswer = true
     quizScore.innerText = score
   }
 
-// Array for questions to appear in quiz
-var questions = 
+// Array for list of questions to appear in quiz
+let questions = 
 [
     {
-        // Question 1
         question: "Which of these mountains are NOT in Colombia?",
         option1: "Pico Simón Bolívar",
         option2: "Ritacuba Blanco",
@@ -121,7 +121,6 @@ var questions =
         answer: 3
     },
     {
-        // Question 2
         question: "Colombia produces 60% of the world's supply of which precious stone?",
         option1: "Garnet",
         option2: "Emerald",
@@ -130,7 +129,6 @@ var questions =
         answer: 2
     },
     {
-        // Question 3
         question: "What is the capital city of Colombia?",
         option1: "Bogotá",
         option2: "Medellin",
@@ -139,7 +137,6 @@ var questions =
         answer: 1
     },
     {
-        // Question 4
         question: "Which waterfall can be found in the city of Bogotá?",
         option1: "Victoria Falls",
         option2: "Tugela Falls",
@@ -148,7 +145,6 @@ var questions =
         answer: 4
     },
     {
-        // Question 5
         question: "What is Cumbia?",
         option1: "A type of drink",
         option2: "A type of music",
@@ -157,8 +153,7 @@ var questions =
         answer: 2
     },
     {
-        // Question 6
-        question: "Which of these countries does NOT share a border with Colombia?",
+        question: "Which of the following countries do not share a border with Colombia?",
         option1: "Peru",
         option2: "Venezuela",
         option3: "Mexico",
@@ -166,7 +161,6 @@ var questions =
         answer: 3
     },
     {
-        // Question 7
         question: "Which of these is the main river of Colombia?",
         option1: "Orinoco",
         option2: "Amazonas", 
@@ -175,7 +169,6 @@ var questions =
         answer: 4
     },
     {
-        // Question 8
         question: "What is the national animal of Colombia?",
         option1: "Condor",
         option2: "Jaguar",
@@ -184,7 +177,6 @@ var questions =
         answer: 1
     },
     {
-        // Question 9
         question: "What material is the 'Sombrero vueltiao' made of?",
         option1: "Cotton", 
         option2: "Plastic",
@@ -193,7 +185,6 @@ var questions =
         answer: 3
     },
     {
-        // Question 10
         question: "What is the official language of Colombia?",
         option1: "Portuguese",
         option2: "Spanish",
@@ -202,7 +193,6 @@ var questions =
         answer: 2
     },
 ]
-
 
 // Call function to display quiz
 startQuiz ();
