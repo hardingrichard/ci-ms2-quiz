@@ -24,6 +24,7 @@ let max_questions = 10;
 let question = document.getElementById('question');
 let currentQuestion = {};
 let questionOptions = [];
+let quizContainer = document.getElementById('quiz-container');
 
 // answer variables
 let options = Array.from(document.querySelectorAll('.answer-option'));
@@ -42,6 +43,8 @@ function startQuiz () {
   questionCounter = 0;
   questionOptions = [...questions];
   getNextQuestion();
+  startButton.classList.add('hide')
+  quizContainer.classList.remove('hide')
 }
   
 // End of quiz variables and modals
@@ -221,5 +224,5 @@ let questions =
     },
 ]
 
-// Call function to display quiz
-startQuiz ();
+// Call function to display quiz by default
+// startQuiz ();
