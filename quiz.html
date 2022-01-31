@@ -33,9 +33,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="#quiz-section">Play Quiz</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="#score-section">Scores</a>
-              </li>
+              </li> -->
           </div>
         </div>
       </nav>
@@ -50,7 +50,7 @@
             <h1>Welcome to the Quiz of Colombia!</h1>
             <h2>Test your knowledge on what you know about the country of Colombia</h2>
             <a class="btn btn-red btn-lg btn-default" href="#how-to-play">How to play</a>
-            <a class="btn btn-red btn-lg btn-default" href="#quiz-container">Go to Quiz</a>
+            <a class="btn btn-red btn-lg btn-default" href="#start-btn">Go to Quiz</a>
           </div>
         </div>
       </div>
@@ -113,12 +113,28 @@
           <p data-number="4" class="answer-option">Option 4</p>
         </div>
       </div>
-      <!-- <div class="quiz-controls">
-        <button id="start-btn" class="btn btn-red btn-lg btn-default">Begin Quiz</button>
-        <button id="next-btn" class="btn btn-red btn-lg btn-default hide">Next</button>
-      </div> -->
+      <div class="quiz-controls">
+        <button id="start-btn" class="quiz-btn">Begin Quiz</button>
+      </div>
     </section>
-  
+    
+    <!-- Game end -->
+    <section>
+      <div class="end-screen" id="end-screen-modal">
+        <div class="end-content">
+        </div>
+        <div class="end-results">
+          <div id="result-score" class="modal-content">
+            <h1>End of Quiz</h1>
+            <h3>Out of a possible 100...</h3>
+            <p>You scored: <span id="user-score">0</span></p>
+            <button id="restart" class="quiz-btn">Back to Quiz page</button>
+          </div>
+        </div>
+      </div>
+      <div id="end-overlay"></div>
+    </section>
+
   </main>
 
 <!-- Footer Section with Copyright -->
