@@ -85,11 +85,17 @@ form.addEventListener('submit', (e) => {
   return regex.test(String(email).toLowerCase());
 }
 
-/**
- *  Function to check that the string is an email with regex epression
- */
-function isEmail(email) {
-  let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-  
-  return regex.test(String(email).toLowerCase());
+
+// emailJS code below taken from emailJS.com tutorial
+
+window.onload = function() {
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      emailjs.init("user_ylIxWxgFUymrhtkjDo5o3");
+      emailjs.sendForm('contact_service', 'contact_form', this)
+          .then(function() {
+              console.log('SUCCESS!');
+          }, function(error) {
+              console.log('FAILED...', error);
+          });
+  });
 }
