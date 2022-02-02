@@ -2,13 +2,41 @@
 
 // global variables
 let form = document.querySelector('form')
-let firstNameInput = document.getElementById('fname');
-let lastNameInput = document.getElementById('lname');
+let nameInput = document.getElementById('name');
+let formFeedback = document.querySelector('.form-feedback')
+let isValid = false;
+
+/**
+ * Function to produce an error prompt and form field border 
+ * color change of red if first and/or last name hasn't been input
+ */
+function inputValidate() {
+  nameInput.classList.remove('invalid');
+  nameInput.nextElementSibling.classList.add('hidden');
+  isValid = true;
+
+  if (!nameInput.value) {
+    nameInput.nextElementSibling.classList.remove('hidden')
+    nameInput.classList.add('invalid')
+    isValid = false;
+  }
+}
+
+// Event listener to remove red error prompt from border if input
+nameInput.addEventListener('input', () => {
+  inputValidate();
+})
+
 
 // Prevents form from submitting by default for validation control
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  console.log("submit event")
+  inputValidate();
+  
+  if (isValid) {
+    form.remove();
+    formFeedback.classList.remove('hidden');
+  }
 });
 
 
