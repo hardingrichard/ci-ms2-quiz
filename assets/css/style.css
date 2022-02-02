@@ -9,6 +9,8 @@ body {
   font-family: Roboto,Arial,sans-serif;
 }
 
+/* Button styles */
+
 /*btn-default used to override bootstrap styling */
 .btn.btn-default {
   padding: 0.5rem 1rem;
@@ -56,6 +58,8 @@ body {
   transform: scale(1.05);
   background-color: slateblue;
 }
+
+/* Navigation bar styles */
 
 /* Override bootstrap default style navbar colour */
 .navbar-custom {
@@ -119,8 +123,6 @@ body {
   color: #fff;
 }
 
-/*How to play image styling */
-
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -177,6 +179,7 @@ body {
 }
 
 /* Progress bar style */
+
 #quiz-progress {
   width: 20rem;
   height:  0.5rem;
@@ -194,6 +197,7 @@ body {
 }
 
 /* Answer options styling */
+
 .answer-area {
   display: flex;
   width: 100%;
@@ -228,6 +232,7 @@ body {
 }
 
 /* Modal overlay - Resource: w3schools.com */
+
 #end-overlay {
   display: none;
   position: fixed;
@@ -324,7 +329,6 @@ textarea.invalid {
   overflow: auto;
 }
 
-
 /*footer styling */
 
 footer {
@@ -343,7 +347,6 @@ footer {
   color: #fff;
 }
 
-/* Social media links and copyright style */
 .footer-socials a {
   display: inline-block;
   padding: 1rem;
@@ -354,11 +357,6 @@ footer {
 
 .footer-socials a:hover {
   color: blue;
-}
-
-/* Media query for screens over 900px */
-@media screen and (min-width: 900px) {
-  
 }
 
 /* Media query for larger screens */
@@ -380,7 +378,6 @@ footer {
     width: 100%;
     flex: 0 0 auto;
   }
-
 }
 
 /* Media query for medium screens */
