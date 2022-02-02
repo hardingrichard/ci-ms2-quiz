@@ -275,6 +275,10 @@ form {
   border: solid 1px blue;
 }
 
+.form-group {
+  margin-bottom: 0.5rem;
+}
+
 .form-group label {
   display: block;
   font-size: 24px;
