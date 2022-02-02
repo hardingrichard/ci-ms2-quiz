@@ -8,14 +8,15 @@ let messageInput = document.getElementById('message')
 let formFeedback = document.querySelector('.form-feedback');
 
 let isValid = false;
+let isValidateActive = false;
 
+// inputs array to be called for looping through
 let inputs = [
   nameInput,
   emailInput,
   messageInput,
 ]
 
-let isValidateActive = false;
 /**
  * Function to produce an error prompt and form field border 
  * color change of red if first and/or last name hasn't been input
@@ -44,8 +45,7 @@ function inputValidate() {
 }
 
 /**
- * 
- * Helper function for inputValidate to clean code
+ * Helper function for inputValidate to clean up code for easier reading
  */
 function resetInput (element) {
   element.classList.remove('invalid');
@@ -57,14 +57,14 @@ function invalidateInput (element) {
   element.classList.add('invalid')
 }
 
-// Event listener to remove red error prompt from border if input
+// Event listener for each loop through array and remove red error prompt from border if input
 inputs.forEach(input => {
   input.addEventListener('input', () => {
     inputValidate();
   });
 });
 
-// Prevents form from submitting by default for validation control
+// Event listener to prevent form from submitting by default for validation control
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   isValidateActive = true;
@@ -85,9 +85,7 @@ form.addEventListener('submit', (e) => {
   return regex.test(String(email).toLowerCase());
 }
 
-
-// emailJS code below taken from emailJS.com tutorial
-
+// emailJS code taken and modified from emailJS.com tutorial
 window.onload = function() {
   document.getElementById('contact-form').addEventListener('submit', function(event) {
       emailjs.init("user_ylIxWxgFUymrhtkjDo5o3");
