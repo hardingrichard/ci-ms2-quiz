@@ -263,6 +263,40 @@ body {
   color: blue;
 }
 
+/* Contact Us page style */
+
+form {
+  text-align: center;
+  padding: 1rem;
+}
+
+.form {
+  border-radius: 5px;
+  border: solid 1px blue;
+}
+
+.form-group label {
+  display: block;
+  font-size: 24px;
+}
+
+.form-group input {
+  padding: 5px;
+  width: 326px;
+  font-size: 18px;
+}
+
+input.invalid {
+  border: 2px solid red;
+}
+
+textarea.invalid {
+  border: 2px solid red;
+}
+
+.error-prompt {
+  color: red;
+}
 
 /*footer styling */
 
