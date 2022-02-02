@@ -4,6 +4,7 @@
 let form = document.querySelector('form');
 let nameInput = document.getElementById('name');
 let emailInput = document.getElementById('email');
+let messageInput = document.getElementById('message')
 let formFeedback = document.querySelector('.form-feedback');
 
 let isValid = false;
@@ -11,15 +12,20 @@ let isValid = false;
 let inputs = [
   nameInput,
   emailInput,
+  messageInput,
 ]
+
+let isValidateActive = false;
 /**
  * Function to produce an error prompt and form field border 
  * color change of red if first and/or last name hasn't been input
  */
 function inputValidate() {
+  if (!isValidateActive) return;
   isValid = true;
   resetInput(nameInput);
   resetInput(emailInput);
+  resetInput(messageInput);
 
   if (!nameInput.value) {
     isValid = false;
@@ -29,6 +35,11 @@ function inputValidate() {
   if (!isEmail(emailInput.value)) {
     isValid = false;
     invalidateInput(emailInput);
+  }
+  
+  if (!messageInput.value) {
+    isValid = false;
+    invalidateInput(messageInput);
   }
 }
 
@@ -45,6 +56,7 @@ function invalidateInput (element) {
   element.nextElementSibling.classList.remove('hidden')
   element.classList.add('invalid')
 }
+
 // Event listener to remove red error prompt from border if input
 inputs.forEach(input => {
   input.addEventListener('input', () => {
@@ -57,6 +69,7 @@ inputs.forEach(input => {
 // Prevents form from submitting by default for validation control
 form.addEventListener('submit', (e) => {
   e.preventDefault();
+  isValidateActive = true;
   inputValidate();
   
   if (isValid) {
