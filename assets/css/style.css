@@ -271,7 +271,7 @@ body {
 /* Contact Us page style */
 
 .contact-header {
-  padding-top: 20vh;
+  padding-top: 30%;
 }
 
 form {
@@ -334,9 +334,12 @@ textarea.invalid {
 }
 
 #contact-btn {
-  margin-bottom: 20vh;
+  margin-bottom: 50vh;
 }
 
+#contact-footer {
+  padding-top: 10rem;
+}
 /*footer styling */
 
 footer {
