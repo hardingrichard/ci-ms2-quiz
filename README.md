@@ -62,8 +62,8 @@ A website where users can play a quiz answering questions on the country of Colo
 No. | As a | I want to | so that
 ----|------|-----------|--------
 1 | user | test my knowledge | i can see how much i know
-2 | user | see how well i score | i can try and beat my previous
-3 | user | see the correct answers | i can learn more 
+2 | user | see how well i score | i can try and beat my previous score
+3 | user | see the correct answers | i can learn more about Colombia
 4 | user | be able to restart the quiz | i can play again easily
 5 | user | be able to easily navigate site | to access the features without difficulty
 6 | user | have feedback on my form submit | i know that the form had submitted successfully
@@ -100,12 +100,13 @@ The website was created in a way in which to to make it intuitive and convenient
 Using the national colours of Colombia (Yellow, Blue, Red) to bring familiary and make it clear what the site
 has to do with and is about. This colour theming was used throughout the site with design and features. 
 The colours being bright and contrasting also provides an aspect of fun which compliments the purpose of the 
-website in which to play a game. The site was designed to be free from distracting elements from popping up on 
-the screen and page links were used in the navigation bar to take the user straight to each section of the
-page than needing to scroll. The website consists of four pages: the home page, the quiz game page which 
-features a How To Play section which provides users with instructions and the play quiz section where the users
-can partake in the quiz and test their knowledge as well as a scores section so that users can see how well they did.
-There is also a contact page where users can leave feedback and a 404 error page.
+website in which to play a game. Blue background was used with white text for the game instructions as this
+improves readability and is more dyslexia friendly. The site was designed to be free from distracting elements 
+from popping up on the screen and page links were used in the navigation bar to take the user straight to each 
+section of the page than needing to scroll. The website consists of four pages: the home page, the quiz game page 
+which features a How To Play section which provides users with instructions and the play quiz section where the 
+users can partake in the quiz and test their knowledge as well as a scores section so that users can see how well 
+they did. There is also a contact page where users can leave feedback and a 404 error page.
 
 ## Site Features
 The website is made up of four pages which consist of 8 features:
@@ -285,6 +286,89 @@ The website was tested using Chrome Developer Tools devices option as well as th
 * Huawei mate 20 pro
 
 ### User Story Testing
+Testing of the User Stories identified towards the top of the README are as follows:
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+> 1 | user | test my knowledge | i can see how much i know
+
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Quiz Game | Navigate to quiz page and scroll down to begin quiz | Quiz displays ready for user selection, all selections work through to end of quiz | Worked as intended
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+> 2 | user | see how well i score | i can try and beat my previous score
+
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Quiz Game | Navigate to quiz page and scroll down to begin quiz | Quiz displays and a score is shown increasing with every correct answer | Worked as intended
+Quiz results overlay | Navigate to quiz and complete quiz | On completion of quiz the result page displays showing the score out of 100 | Worked as intended
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+> 3 | user | see the correct answers | i can learn more about Colombia
+
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Quiz Game | Navigate to quiz page and scroll down to begin quiz | Everytime an answer was answered correctly, feedback was given to the user by the option colouring green | Worked as intended
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+> 4 | user | be able to restart the quiz | i can play again easily
+
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Quiz results overlay | Navigate to quiz page and scroll down to begin quiz and answer questions until end | on completion of quiz a result overlay is displayed where the user can click a button to refresh page to start quiz again | Worked as intended
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+> 5 | user | be able to easily navigate site | to access the features without difficulty
+
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Navigation bar | At the top of each page on every page the navbar is displayed | Navbar is always accessible due to being in a sticky position so when scrolling you can still easily access to navigate around the site | Worked as intended
+404 error page | produced an incorrect navigation by causing a typo in the url | 404 error page presented where the user can click the return home button to easily navigate back to homepage or make use of the navbar at the top | Worked as intended
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+> 6 | user | have feedback on my form submit | i know that the form had submitted successfully
+
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Form submit confirmation | Navigate to contact page and fill in contact form then clicking submit | On submitting contact form a message prompt is shown displaying "Thank you for submitting your feedback. We will get back to you shortly! An emailJS form is then sent to the site owner | Worked as intended
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+> 7 | site owner | give users a way of retaking the quiz | to keep users engaged and increase replayability
+
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Quiz results overlay | Navigate to quiz page and complete the quiz | On completion of quiz a results overlay is shown where the user can then click a button to return to the quiz page | Worked as intended
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+> 8 | site owner | have a section detailing how to play | users can play without any confusion on what to do
+
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+How to Play | Navigate to the quiz page and scroll down to blue section of screen | On scrolling of the page a large blue section with a ? graphic is shown with step by step instructions displayed on the side that is easy to read and follow | Worked as intended
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+> 9 | site owner | provide a contact form | users can give feedback on the quiz
+
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Contact form | Navigate to contact page | On navigation to the contact page a contact form is presented with JavaScript validation to ensure the correct entries are input. On submission of form, the data is sent to the site owner email inbox using emailJS. | Worked as intended
+
+>  No. | As a | I want to | so that
+>  ----|------|-----------|--------
+> 10 | site owner | allow users to find us on social media | brand awareness can be increased
+
+Site Feature | Path of Action | Outcome | Testing Result
+-------------|----------------|---------|----------------
+Footer | Scroll to bottom of each webpage | footer is displayed showing three logo's that can be clicked and navigated to the relevant social media platform | worked as intended
 
 ## Bugs and Fixes
 
