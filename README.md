@@ -213,6 +213,7 @@ zero errors or warnings.
 #### CSS Validation
 The CSS was validated using the W3C CSS Validation Service. The CSS had passed with zero 
 errors or warnings
+<details>
 <summary>CSS</summary>
 <img src="documents/validation/validation-css.png" alt="CSS validation image">
 </details>
@@ -223,19 +224,65 @@ There were no issues found with either .js files and only warnings relating to E
 version for using the 'let' variable declaration. JavaScript validation code was used
 with creating the contact form to provide the user with feedback of incorrect data
 entry or missed inputs.
+<details>
 <summary>quiz.js</summary>
 <img src="documents/validation/jslint-quiz.png" alt="JSHint quiz.js validation image">
 </details>
-
+<details>
 <summary>contact.js</summary>
 <img src="documents/validation/validation-css.png" alt="JSHint contact.js validation image">
 </details>
 
 ### Performance
+The google Lighthouse tool was used within the Google Chrome Developer tools to evaluate
+and test the performance of the website pages.
+<details>
+<summary>Home Page</summary>
+<img src="documents/validation/lighthouse-home.png" alt="Home page lighthouse performance image">
+</details>
+<details>
+<summary>Quiz Page</summary>
+<img src="documents/validation/lighthouse-quiz.png" alt="Quiz page lighthouse performanceimage">
+</details>
+<details>
+<summary>Contact Page</summary>
+<img src="documents/validation/lighthouse-contact.png" alt="Contact page lighthouse performance image">
+</details>
+<details>
+<summary>404 Page</summary>
+<img src="documents/validation/lighthouse-404.png" alt="404 page lighthouse performance image">
+</details>
 
 ### Accessibility
+The accessibility standards of the website was validated and evaluated using the WAVE WebAIM web
+accessibility evaluation tool. All pages returned zero errors.
+<details>
+<summary>Home Page</summary>
+<img src="documents/validation/accessibility-home.png" alt="Home page accessibility evaluation image">
+</details>
+<details>
+<summary>Quiz Page</summary>
+<img src="documents/validation/accessibility-quiz.png" alt="Quiz page accessibility evaluation image">
+</details>
+<details>
+<summary>Contact Page</summary>
+<img src="documents/validation/accessibility-contact.png" alt="Contact page accessibility evaluation image">
+</details>
+<details>
+<summary>404 Page</summary>
+<img src="documents/validation/accessibility-404.png" alt="404 page accessibility evaluation image">
+</details>
 
 ### Compatibility
+The website was tested using the following browsers:
+* Google Chrome
+* Mozilla Firefox
+
+The website was tested using Chrome Developer Tools devices option as well as the following physical devices:
+* iphone SE 2020
+* iPad pro
+* Macbook pro
+* Huawei mate 20 pro
 
 ### User Story Testing
 
