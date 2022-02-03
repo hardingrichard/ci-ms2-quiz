@@ -270,8 +270,8 @@ body {
 
 /* Contact Us page style */
 
-#contact-section {
-  padding: 10vh;
+.contact-header {
+  padding-top: 20vh;
 }
 
 form {
