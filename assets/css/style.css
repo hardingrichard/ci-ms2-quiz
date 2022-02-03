@@ -270,6 +270,10 @@ body {
 
 /* Contact Us page style */
 
+#contact-section {
+  padding: 10vh;
+}
+
 form {
   text-align: center;
   padding: 1rem;
