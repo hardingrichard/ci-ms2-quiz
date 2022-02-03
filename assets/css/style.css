@@ -348,7 +348,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding-top: 1rem;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .footer-socials a {
