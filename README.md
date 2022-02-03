@@ -371,6 +371,21 @@ Site Feature | Path of Action | Outcome | Testing Result
 Footer | Scroll to bottom of each webpage | footer is displayed showing three logo's that can be clicked and navigated to the relevant social media platform | worked as intended
 
 ## Bugs and Fixes
+Throughout the duration of the project there were many bug issues faced. Some had taken so long trying to deal with and posed a lot of difficulty. I wasn't able to come up with a 
+solution and the code had became messy and confusing. The decision was made to scrap and swipe the code to start fresh from another approach. There were also occasions where i hadn't made notes of the bugs and the fixes involved in order to document here. A lot of bugs faced were due to user error with type-in errors and missing off parenthesis where required.
+
+The following bugs that were noted during the process can be seen below a long with their fix.
+
+Google Dev Tools returning console error of Uncaught TypeError: document.getElementbyId is not a function
+* Solved: This was due to a typo of not capitalising the 'b' amended to getElementById
+
+Question choices were not being picked up when quiz was run and were just displaying the HTML text of 'Option 1', 'Option 2', 'Option 3', 'Option 4'.
+* Solved: This ended up being due to the array being in a simplified form and the foreach function i had written wasn't set up to loop through the array in this manner. On changing the array to longhand form with Option1: " " Option2: " " Option3: " " Option4: " " the foreach was then able to loop through and add Option + 'number' to call the question options correctly.
+
+Contact form validation resulted in the form fields disappearing after form submission but not displaying confirmation overlay message
+* Solved: the element remove function was used in order to remove the 'hidden' class against the div where the submission confirmation message was written. In doing so displayed the overlay
+message as originally intended.
+
 
 ## Deployment and Version Control
 
