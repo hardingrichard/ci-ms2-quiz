@@ -185,7 +185,7 @@ The website is made up of four pages which consist of 8 features:
 * WAVE WebAIM accessibility evaluation
 * W3C Jigsaw CSS Validation
 * W3C Markup Validation
-* EmailJS 
+* EmailjS 
 
 ## Testing
 
@@ -336,7 +336,7 @@ Navigation bar | At the top of each page on every page the navbar is displayed |
 
 Site Feature | Path of Action | Outcome | Testing Result
 -------------|----------------|---------|----------------
-Form submit confirmation | Navigate to contact page and fill in contact form then clicking submit | On submitting contact form a message prompt is shown displaying "Thank you for submitting your feedback. We will get back to you shortly! An emailJS form is then sent to the site owner | Worked as intended
+Form submit confirmation | Navigate to contact page and fill in contact form then clicking submit | On submitting contact form a message prompt is shown displaying "Thank you for submitting your feedback. We will get back to you shortly! An EmailjS form is then sent to the site owner | Worked as intended
 
 >  No. | As a | I want to | so that
 >  ----|------|-----------|--------
@@ -360,7 +360,7 @@ How to Play | Navigate to the quiz page and scroll down to blue section of scree
 
 Site Feature | Path of Action | Outcome | Testing Result
 -------------|----------------|---------|----------------
-Contact form | Navigate to contact page | On navigation to the contact page a contact form is presented with JavaScript validation to ensure the correct entries are input. On submission of form, the data is sent to the site owner email inbox using emailJS. | Worked as intended
+Contact form | Navigate to contact page | On navigation to the contact page a contact form is presented with JavaScript validation to ensure the correct entries are input. On submission of form, the data is sent to the site owner email inbox using EmailjS. | Worked as intended
 
 >  No. | As a | I want to | so that
 >  ----|------|-----------|--------
@@ -389,4 +389,56 @@ message as originally intended.
 
 ## Deployment and Version Control
 
+### Deployment
+GitHub Pages was used in order to deploy the live version of the website. This was done by completing the following:
+1. Locate and click on the Settings tab within the repository
+2. From here on the left hand side go down and click Pages
+3. The GitHub Pages page will be displayed, locate the Source and set the branch to main
+4. If this has been completed successfully then a message will be displayed at the top with a green check "Your site is published at https://github.com/hardingrichard/ci-ms2-quiz"
+
+[Click Here](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) for further guidance and instructions on how to deploy yours.
+
+### Cloning
+If you wish to clone the repository you can do so by [clicking here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) or completing the following:
+1. Locate and click on the Code button at the top of the directory within the GitHub repository
+2. This will dropdown the option of HTTPS, SSH and GitHub CLI and the option to open with GitHub Desktop or Download ZIP. Choose the option you prefer and click the copy to clipboard button
+3. Open the Git bash terminal
+4. Choose the working directory location to where you wish to have the cloned directory.
+5. Type "git clone" followed by pasting the URL you copied in step 2.
+6. Press Enter to complete and create your local clone.
+
+### Version Control
+[Click here](https://github.com/hardingrichard/ci-ms2-quiz/commits/main) to explore the history of the creation process and see what the website looked at different points in time and what changes were made. Regular commits were made in order to make it easier to view the thought process during the creation of the website and readme and also have saved back up points to avoid loss of work in case of any serious malfunctions.
+
+### EmailjS API
+To set up the EmailjS API for the contact form submission the following steps are required:
+1. Go to www.emailjs.com
+2. Create an account
+3. Add a new email service and making note of the contact_service id or using the default of 'contact_service' as the id
+4. add a new email template and make a note of the contact_form id or using the default of 'contact form' as the id
+5. Get the unique user id by going to the integration dashboard making a note of this
+6. Load the EmailjS SDK within the head tags of the HTML file
+7. In the .js file create a function that is an eventlistener for submit events to initialise the SDK with the unique user id obtained from the integration dashboard.
+
+For more detailed instructions please read through the documentation and tutorial provided by EmailjS by [Clicking here](https://www.emailjs.com/docs/introduction/how-does-emailjs-work/)
+
 ## Credits and Acknowledgements
+
+### Credits
+* HTML code copied from the Bootstrap v5.0 documentation snippet for the Navbar and was amended as required and modified to be suitable to the website theme https://getbootstrap.com/docs/5.0/components/navbar
+* Website used for guidance on form validation: https://www.codebrainer.com/blog/contact-form-in-javascript 
+* EmailjS code taken and modified from emailJS.com tutorial: https://www.emailjs.com/docs/tutorial/creating-contact-form/
+* The website was used for guidance with creating a progress bar: https://javascript.plainenglish.io/building-a-progress-bar-in-css-js-html-from-scratch-6449da06042
+* The following Youtube Tutorials were used to get an idea and guidance for the JavaScript code for making a quiz app where detailed in the .js file. "How to Make a Quiz App using HTML CSS Javascript - Vanilla Javascript Project for Beginners" - Brian Design. "Build a quiz app with JavaScript" - Web Dev Simplified
+* The website was used for guidance with Arrow function expressions: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+* The website tutorial was also referred to for guidance with the JavaScript for the quiz app: https://simplestepscode.com/javascript-quiz-tutorial/
+* The website was used for learning and refreshing memory with JavaScript and HTML DOM references:  https://www.w3schools.com/
+* The website was used for further information and learning during the project: https://developer.mozilla.org/en-US/docs/Web/JavaScript 
+
+### Acknowledgements
+I would like to take a moment to give my thanks:
+
+* My gratitude to Karen who has given me encouragement and support throughout and inspiration to create a Colombian themed website/quiz
+* My parents for testing the site as first time users to see if they found it intuitive
+* My mentor Mo Shami for his time, guidance and feedback during our meetings
+* My dog Henry who had given me comfort and company sleeping next to me on the long nights coding who is sadly no longer with me and passed away suddenly during the creation of this project. I love you. May you rest in peace - 2/2/2022.
