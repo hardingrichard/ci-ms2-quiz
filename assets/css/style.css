@@ -333,11 +333,15 @@ textarea.invalid {
   overflow: auto;
 }
 
+#contact-btn {
+  margin-bottom: 20vh;
+}
+
 /*footer styling */
 
 footer {
   display: block;
-  background-color: red;
+  background-color: darkred;
   padding-bottom: 1rem;
   text-align: center;
   margin-bottom: 0;
@@ -348,14 +352,14 @@ footer {
   justify-content: center;
   align-items: center;
   padding-top: 1rem;
-  color: rgb(0, 0, 0);
+  color: #fff;
 }
 
 .footer-socials a {
   display: inline-block;
   padding: 1rem;
   text-decoration: none;
-  color: #ffa200;
+  color: #fff;
   font-size: 2em;
 }
 
